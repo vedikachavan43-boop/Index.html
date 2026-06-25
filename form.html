@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Form</title>
+
+    <!-- Internal (Block) CSS -->
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1{
+            color: darkblue;
+            text-align: center;
+        }
+
+        form{
+            width: 60%;
+            margin: auto;
+        }
+
+        fieldset{
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        table{
+            margin-top: 15px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            padding: 8px;
+            text-align: center;
+        }
+
+        button{
+            padding: 8px 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color:red;">Today's we are creating our form</h1>
+
+    <form action="forms.html" method="get">
+
+        <center>
+            <b style="font-size:20px;">Student Information</b>
+        </center>
+
+        <fieldset>
+            <legend>Student Details</legend>
+
+            Name - <input type="text" placeholder="Enter your name"><br><br>
+
+            Password - <input type="password"><br><br>
+
+            Email - <input type="email"><br><br>
+
+            Number - <input type="number"><br><br>
+
+            Date - <input type="date"><br><br>
+
+            Gender -
+            <input type="radio" name="gen"> Male
+            <input type="radio" name="gen"> Female
+            <br><br>
+
+            Subject -
+            <input type="checkbox" checked> Python
+            <input type="checkbox"> Java
+            <input type="checkbox"> AI
+            <br><br>
+
+            Feedback -
+            <textarea></textarea><br><br>
+
+            Feedback -
+            <textarea rows="5" cols="10" placeholder="Give us your feedback">
+This is my feedback
+            </textarea><br><br>
+
+            Subject -
+            <select>
+                <option>Computer</option>
+                <option>AI</option>
+                <option>ML</option>
+                <option>Python</option>
+            </select>
+
+            <br><br>
+
+            
+
+            <table border="4">
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>Vedika</td>
+                    <td>Student</td>
+                    <td>Web Dev</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <button type="submit" value="submit" style="background-color: green; color: white;">Submit</button>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
